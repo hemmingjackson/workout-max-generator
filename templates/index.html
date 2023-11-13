@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Lift Calculator</title>
+</head>
+<body>
+    <h1>Max Lift Calculator</h1>
+    <form action="/calculate" method="post">
+        <label for="lift_type">Select Lift Type:</label>
+        <select name="lift_type" id="lift_type" required>
+            <option value="bench_press">Bench Press</option>
+            <option value="squat">Squat</option>
+            <option value="deadlift">Deadlift</option>
+        </select><br>
+
+        <label for="weight_lifted">Weight Lifted (in pounds):</label>
+        <input type="number" name="weight_lifted" id="weight_lifted" required><br>
+
+        <label for="repetitions">Repetitions:</label>
+        <input type="number" name="repetitions" id="repetitions" required><br>
+
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
